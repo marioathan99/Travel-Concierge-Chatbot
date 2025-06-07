@@ -415,7 +415,7 @@ To help you prepare for this assessment, please review the following resources:
 
 * **Claude API**: For natural language understanding and generation. (You will be provided with an API key or a mock service.)
 
-  * `ANTHROPIC_API_KEY = "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"`
+  * `ANTHROPIC_API_KEY = "XXXXXXXXXXX"`
 
   * *Note: This API key is personalized for your assessment, and token usage will be monitored for analytics purposes.*
 
@@ -582,7 +582,7 @@ graph TD
 - Clear display of recommendations and booking confirmations
 
 **2. Claude API Integration:**
-- Using provided API key: `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`
+- Using provided API key: `XXXXXXX`
 - Structured prompts for travel recommendations
 - Context-aware conversation flow
 
@@ -1728,7 +1728,7 @@ st.set_page_config(
 )
 
 # Initialize Claude API client
-ANTHROPIC_API_KEY = "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"
+ANTHROPIC_API_KEY = "XXXXXX"
 
 @st.cache_resource
 def get_claude_client():
@@ -2098,7 +2098,7 @@ st.set_page_config(
 )
 
 # Initialize Claude API client
-ANTHROPIC_API_KEY = "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"
+ANTHROPIC_API_KEY = "XXXXXXX"
 
 @st.cache_resource
 def get_claude_client():
