@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coder Assessment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Header -->
+        <header class="gradient-bg text-white p-8 rounded-2xl shadow-lg mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Vibe Coder Assessment</h1>
+            <p class="text-lg md:text-xl text-blue-200">AI-Assisted Development with Cline</p>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- Section: Assessment Overview -->
+            <section id="overview" class="bg-white p-8 rounded-2xl shadow-md">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b pb-2">Assessment Overview</h2>
+                <p class="text-lg mb-6">
+                    This assessment evaluates a candidate's ability to effectively collaborate with an AI assistant (Cline), manage development workflows, and build a functional prototype, with a focus on the "vibe" of their interaction and the quality of their output.
+                </p>
+                <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg">
+                    <p>You will be tasked with building a simplified version of an AI-powered travel recommendation chatbot using Streamlit, integrating with the Claude API, and leveraging Model Context Protocol (MCP) servers. This exercise is designed to assess your technical skills, problem-solving approach, and your ability to work efficiently and effectively with an AI coding partner.</p>
+                </div>
+            </section>
+
+            <!-- Section: Key Evaluation Areas -->
+            <section id="evaluation" class="bg-white p-8 rounded-2xl shadow-md">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Key Evaluation Areas</h2>
+                <ol class="space-y-4 list-decimal list-inside text-lg">
+                    <li><span class="font-semibold text-blue-700">Cline Collaboration & Communication (40%):</span> Clarity of prompts, problem decomposition, and overall synergy in the AI-assisted development process.</li>
+                    <li><span class="font-semibold text-blue-700">Context Window Management (20%):</span> Efficiency in managing conversation history and strategic use of information-gathering tools.</li>
+                    <li><span class="font-semibold text-blue-700">Plan vs. Act Mode Mastery (20%):</span> Strategic planning in "PLAN MODE" and effective execution in "ACT MODE".</li>
+                    <li><span class="font-semibold text-blue-700">MCP Integration Skills (10%):</span> Successful integration and creative application of MCP tools.</li>
+                    <li><span class="font-semibold text-blue-700">Prototype Quality & Technical Excellence (10%):</span> Functionality, code quality, and user experience of the final prototype.</li>
+                </ol>
+            </section>
+
+            <!-- Section: Assessment Task -->
+            <section id="task" class="bg-white p-8 rounded-2xl shadow-md">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b pb-2">Assessment Task: Simplified Travel Concierge Chatbot</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Objective & Scenario</h3>
+                        <p class="mb-4">Build a Streamlit-based chatbot that can recommend travel destinations and activities, leveraging the Claude API for conversational intelligence and an MCP server for external data.</p>
+                        <p>The chatbot should be able to:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-2">
+                            <li>Engage in a conversation about travel preferences.</li>
+                            <li>Suggest destinations and activities using synthetic data.</li>
+                            <li>Display recommendations in a clear format.</li>
+                            <li>Utilize an MCP server to look up additional information.</li>
+                            <li>Simulate a "booking" confirmation.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Technical Requirements</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="font-semibold w-24">Language:</span> Python 3.9+</li>
+                            <li class="flex items-center"><span class="font-semibold w-24">UI:</span> Streamlit</li>
+                            <li class="flex items-center"><span class="font-semibold w-24">API:</span> Claude API</li>
+                            <li class="flex items-center"><span class="font-semibold w-24">Server:</span> MCP Server</li>
+                        </ul>
+                         <div class="mt-4">
+                            <label class="font-semibold text-gray-700">Personalized API Key:</label>
+                            <div class="mt-1 p-3 bg-gray-900 text-white rounded-lg text-sm font-mono break-all shadow-inner">
+                                sk-ant-api03-8mSHR7pg2o7...[REDACTED]...nuQAA
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Note: This API key is for your assessment, and usage will be monitored.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Preparation & Instructions -->
+            <div class="grid lg:grid-cols-2 gap-8">
+                <section id="preparation" class="bg-white p-8 rounded-2xl shadow-md">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Preparation Resources</h2>
+                    <ul class="space-y-3">
+                        <li><a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Anthropic Prompt Engineering Masterclass &rarr;</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=f33Fw6NiPpw" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Cline Installation & Setup Guide &rarr;</a></li>
+                        <li><a href="https://docs.streamlit.io/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Streamlit Documentation &rarr;</a></li>
+                        <li><span class="text-gray-600">Model Context Protocol (MCP) Overview (Details provided during assessment)</span></li>
+                    </ul>
+                </section>
+                
+                <section id="instructions" class="bg-white p-8 rounded-2xl shadow-md">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Instructions</h2>
+                    <ol class="list-decimal list-inside space-y-3">
+                        <li>Start in <span class="font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded">PLAN MODE</span> to outline your approach with Cline.</li>
+                        <li>Switch to <span class="font-semibold bg-green-100 text-green-800 px-2 py-1 rounded">ACT MODE</span> to implement your plan.</li>
+                        <li>Iterate with Cline for coding, debugging, and advice.</li>
+                        <li>Demonstrate at least one call to an MCP tool.</li>
+                        <li>Submit your `app.py`, `requirements.txt`, `README.md`, and Cline chat history.</li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- Section: Evaluation Rubric -->
+            <section id="rubric" class="bg-white p-8 rounded-2xl shadow-md">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Evaluation Rubric</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b border-gray-200">Criteria</th>
+                                <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b border-gray-200">1 (Needs Improvement)</th>
+                                <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b border-gray-200">2 (Developing)</th>
+                                <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b border-gray-200">3 (Proficient)</th>
+                                <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b border-gray-200">4 (Exemplary)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">Cline Collaboration</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Struggles to guide Cline.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Some guidance, but inefficient.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Clear prompts; good synergy.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Exceptional, highly efficient collaboration.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">Context Management</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Inefficient information flow.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Occasionally redundant.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Manages context well.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Masterful, concise, and effective.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">Plan vs. Act Mode</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Unclear planning; struggles.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Basic planning; some confusion.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Clear planning; effective use.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Strategic planning; seamless transitions.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">MCP Integration</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Fails to integrate or incorrect.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Basic integration; limited understanding.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Successful integration.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Creative and effective application.</td>
+                            </tr>
+                             <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">Prototype Quality</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Non-functional; poor code/UX.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Partially functional; basic code/UX.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Functional; clean code; decent UX.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Well-architected; excellent UX.</td>
+                            </tr>
+                             <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 font-semibold">Overall "Vibe"</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Frustrated/ineffective.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Acceptable; some friction.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Positive and productive.</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Exceptional, natural partnership.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+             
+            <footer class="text-center text-gray-500 mt-12 pb-4">
+                <p class="font-bold text-lg">Good luck, and we look forward to seeing your "vibe" in action!</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
